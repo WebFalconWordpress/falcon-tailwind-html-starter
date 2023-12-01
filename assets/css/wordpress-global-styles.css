@@ -1260,29 +1260,31 @@ h6 {
 }
 
 h1 {
-	font-size: var(--wp--preset--font-size--text-6-xl);
+    font-size: var(--wp--preset--font-size--text-6-xl);
+    line-height: 4.5rem;
 }
 
 h2 {
-	font-size: var(--wp--preset--font-size--text-5-xl);
+    font-size: var(--wp--preset--font-size--text-5-xl);
+    line-height: 3.5rem;
 }
 
 h3 {
-	font-size: var(--wp--preset--font-size--text-4-xl);
+    font-size: var(--wp--preset--font-size--text-4-xl);
 }
 
 h4 {
-	font-size: var(--wp--preset--font-size--text-3-xl);
+    font-size: var(--wp--preset--font-size--text-3-xl);
 }
 
 h5 {
-	font-size: var(--wp--preset--font-size--text-2-xl);
-	line-height: 2;
+    font-size: var(--wp--preset--font-size--text-2-xl);
+    line-height: 2;
 }
 
 h6 {
-	font-size: var(--wp--preset--font-size--text-xl);
-	line-height: 2;
+    font-size: var(--wp--preset--font-size--text-xl);
+    line-height: 2;
 }
 
 .wp-element-button,
