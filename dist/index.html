@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<body>
-
+<head>
 	
 
 <!-- Include all css from css folder -->
@@ -12,8 +11,12 @@
 <link rel="stylesheet" href="../assets/css/app.css">
 
 <script src="../assets/js/app.js"></script>
+</head>
 
-<div class="bg-gray-50">
+<body>
+
+	<div class="wp-site-blocks">
+		<header class="bg-gray-400">
 	<div class="container py-4 mx-auto lg:flex lg:justify-between lg:items-center">
 
 		<div class="flex items-center justify-between">
@@ -29,15 +32,15 @@
 			</a>
 		</div>
 	</div>
-</div>
+</header>
 
-	<main class="wp-block-group page-block-content">
+		<main class="wp-block-group page-block-content">
 
-		<div class="container mx-auto my-8 wp-block-group ">
+			<div class="container mx-auto my-8 wp-block-group ">
 
-			<h1 class="wp-block-heading alignwide" style="padding-top:var(--wp--preset--spacing--5)">Posts</h1>
+				<h1 class="wp-block-heading alignwide" style="padding-top:var(--wp--preset--spacing--5)">Posts</h1>
 
-			<section class="bg-white dark:bg-gray-900">
+				<section class="bg-white dark:bg-gray-900">
     <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-12">
         <a href="#" class="inline-flex items-center justify-between px-1 py-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full mb-7 dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
             <span class="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3">New</span> <span class="text-sm font-medium">Flowbite is out! See what's new</span> 
@@ -90,8 +93,8 @@
         </div> 
     </div>
 </section>
-			
-			<section class="bg-white dark:bg-gray-900">
+				
+				<section class="bg-white dark:bg-gray-900">
     <div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-12 sm:text-center lg:py-16">
         <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">We didn't reinvent the wheel</h2>
         <p class="font-light text-gray-500 sm:text-lg md:px-20 lg:px-38 xl:px-48 dark:text-gray-400">We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need.</p>
@@ -105,27 +108,21 @@
         </div>
     </div>
 </section>
-		</div>
+			</div>
 
-	</main>
+		</main>
 
-	
-<!-- wp:group {"className":"sticky bottom-0 bg-gray-50"} -->
-<div class="sticky bottom-0 wp-block-group bg-gray-50">
-	<!-- wp:group {"className":"container flex justify-between mx-auto text-center text-gray-500 h-20 place-items-center"} -->
+		<footer class="bg-gray-400  wp-block-group">
 	<div
 		class="container flex justify-between h-20 mx-auto text-center text-gray-500 wp-block-group place-items-center">
-		<!-- wp:site-logo /-->
-
+		SITE LOGO
 		<!-- wp:paragraph {"className":"has-text-align-center has-secondary-color has-text-color has-link-color has-small-font-size"} -->
 		<p class="has-text-align-center has-secondary-color has-text-color has-link-color has-small-font-size">
-		&copy; 2023 by ABC Ventures. Proudly created with <a href="https://wordpress.org/">WordPress</a>
+		&copy; 2023 by Web Falcon. Proudly created with <a href="https://webfalcon.me/">Web Falcon</a>
 		<!-- /wp:paragraph -->
 	</div>
-	<!-- /wp:group -->
-</div> 
-<!-- /wp:group -->
-
+</footer> 
+	</div>
 </body>
 
 </html>

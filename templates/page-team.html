@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+	<!-- build:include parts/scripts-styles.html --><!-- /build -->
+</head>
+
 <body>
+	<div class="wp-site-blocks">
+		<!-- build:include parts/header.html --><!-- /build -->
 
-	<!-- build:include parts/header.html --><!-- /build -->
+		<main class="wp-block-group page-block-content">
 
-	<main class="wp-block-group page-block-content">
+			<article class="container mx-auto my-8 wp-block-group">
+				<!-- build:include patterns/page-team-why-us.html --><!-- /build -->
+				<!-- build:include patterns/page-team-social-impact.html --><!-- /build -->
+			</article>
 
-		<article class="container mx-auto my-8 wp-block-group">
-			<!-- build:include patterns/page-team-why-us.html --><!-- /build -->
-			<!-- build:include patterns/page-team-social-impact.html --><!-- /build -->
-		</article>
+		</main>
 
-	</main>
-
-	<!-- build:include parts/footer.html --><!-- /build -->
-
+		<!-- build:include parts/footer.html --><!-- /build -->
+	</div>
 </body>
 
 </html>

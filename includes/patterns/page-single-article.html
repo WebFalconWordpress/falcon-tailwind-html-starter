@@ -1,0 +1,322 @@
+
+    <h1 class="wp-block-post-title">Sample Page</h1>
+
+    <div class="entry-content wp-block-post-content is-layout-flow wp-block-post-content-is-layout-flow">
+        <p>This style guide exemplifies the base styles.</p>
+        <p><a href="https://flyntwp.com/BaseStyle/">https://flyntwp.com/BaseStyle/</a></p>
+        <p><strong>Creating a well thought out base style for a new website is one of the most critical parts to ensure
+                an overall successful project progression.</strong></p>
+        <p>The base style should contain all those basic HTML elements and their variations that will be needed within
+            the website. May it be in standard formatted text, or within custom styled layout components.</p>
+        <p>The goal is to abstract the element designs just to the right level, so that they can be used in any context
+            without further modifications, but to keep them flexible enough for custom adjustments when needed, without
+            having to overwrite many CSS attributes.</p>
+        <p>The following markup is a best practice starting point to help you focus on what’s important. It does not
+            include all HTML elements and other elements will still work, only without further customization.</p>
+        <ol id="table-of-contents">
+            <li><a href="https://flyntwp.com/BaseStyle/#colors">Colors</a></li>
+            <li><a href="https://flyntwp.com/BaseStyle/#typography">Typography</a></li>
+            <li><a href="https://flyntwp.com/BaseStyle/#buttons-and-links">Buttons and Links</a></li>
+            <li><a href="https://flyntwp.com/BaseStyle/#forms">Forms</a></li>
+            <li><a href="https://flyntwp.com/BaseStyle/#helpers">Helpers</a></li>
+            <li><a href="https://flyntwp.com/BaseStyle/#themes">Themes</a>
+                <ol>
+                    <li><a href="https://flyntwp.com/BaseStyle/#theme-light">Theme Light</a></li>
+                    <li><a href="https://flyntwp.com/BaseStyle/#theme-dark">Theme Dark</a></li>
+                    <li><a href="https://flyntwp.com/BaseStyle/#theme-reset">Theme Reset</a></li>
+                </ol>
+            </li>
+        </ol>
+        <hr class="wp-block-separator has-alpha-channel-opacity">
+        <h2 class="wp-block-heading" id="colors">1. Colors&nbsp;<a href="https://flyntwp.com/BaseStyle/#colors">#</a>
+        </h2>
+        <p>A strong selection of colors is essential for any website. Using CSS color variables provide a consistent and
+            efficient way to incorporate color into the design while it is easy to make global changes.</p>
+        <figure class="wp-block-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Example</th>
+                        <th>CSS variable</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Color example</th>
+                        <td>–color-accent</td>
+                        <td>Highlight elements or draw attention (e.g. Links or Buttons)</td>
+                    </tr>
+                    <tr>
+                        <th>Color example</th>
+                        <td>–color-background</td>
+                        <td>Element Backgrounds</td>
+                    </tr>
+                    <tr>
+                        <th>Color example</th>
+                        <td>–color-background-secondary</td>
+                        <td>More contrasted Element Backgrounds (e.g. inside Table Rows)</td>
+                    </tr>
+                    <tr>
+                        <th>Color example</th>
+                        <td>–color-border</td>
+                        <td>Element Borders (e.g. Tables or Cards)</td>
+                    </tr>
+                    <tr>
+                        <th>Color example</th>
+                        <td>–color-border-secondary</td>
+                        <td>More contrasted Element Borders (e.g. inputs)</td>
+                    </tr>
+                    <tr>
+                        <th>Color example</th>
+                        <td>–color-text</td>
+                        <td>Texts and Elements</td>
+                    </tr>
+                    <tr>
+                        <th>Color example</th>
+                        <td>–color-text-muted</td>
+                        <td>Subtle Texts or Elements (e.g. Captions and Table Headers)</td>
+                    </tr>
+                    <tr>
+                        <th>Color example</th>
+                        <td>–color-error</td>
+                        <td>Indicate errors (e.g. on inputs)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </figure>
+        <hr class="wp-block-separator has-alpha-channel-opacity">
+        <h2 class="wp-block-heading" id="typography">2. Typography&nbsp;<a
+                href="https://flyntwp.com/BaseStyle/#typography">#</a></h2>
+        <p>Using the css variable&nbsp;<code>--flow-space</code>&nbsp;creates a smooth flow rhythm between elements.</p>
+        <h1 class="wp-block-heading">H1: The quick brown fox jumps over the lazy dog</h1>
+        <h2 class="wp-block-heading">H2: The quick brown fox jumps over the lazy dog</h2>
+        <h3 class="wp-block-heading">H3: The quick brown fox jumps over the lazy dog</h3>
+        <h4 class="wp-block-heading">H4: The quick brown fox jumps over the lazy dog</h4>
+        <h5 class="wp-block-heading">H5: The quick brown fox jumps over the lazy dog</h5>
+        <h6 class="wp-block-heading">H6: The quick brown fox jumps over the lazy dog</h6>
+        <p>Paragraph: The quick brown fox jumps over the lazy dog</p>
+        <p>Label: The quick brown fox jumps over the lazy dogCaption: The quick brown fox jumps over the lazy dog</p>
+        <p>Paragraphs can contain any number of words or other elements. It can also contain&nbsp;<a
+                href="https://www.google.com/search?q=HTML+Links" target="_blank"
+                rel="noreferrer noopener">links</a>,&nbsp;<strong>bold</strong>,&nbsp;<em>italic</em>,&nbsp;underline,&nbsp;<s>strikethrough</s>,&nbsp;<sub>sub</sub>,&nbsp;<sup>sup</sup>,&nbsp;<small>small</small>&nbsp;abbr.,&nbsp;<mark>highlighted</mark>,&nbsp;<kbd>kbd</kbd>,&nbsp;<code>code</code>&nbsp;or
+            other inline elements.</p>
+        <p>This paragraph is a placeholder and it can be skipped. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet venenatis urna cursus.
+            Amet nulla facilisi morbi tempus iaculis urna id volutpat lacus.</p>
+        <blockquote class="wp-block-quote">
+            <p>“Base styling is done, when this page has a custom look and is visually structured so that all elements,
+                their relationships, meanings and hierarchy are recognizable.”— a mysterious web developer</p>
+        </blockquote>
+        <p>This paragraph is a placeholder and it can be skipped. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet venenatis urna cursus.
+            Amet nulla facilisi morbi tempus iaculis urna id volutpat lacus.</p>
+        <figure class="wp-block-image"><img decoding="async" src="https://via.placeholder.com/770x513?text=3:2%20ratio"
+                alt="Placeholder">
+            <figcaption class="wp-element-caption">A caption for the image</figcaption>
+        </figure>
+        <h3 class="wp-block-heading">Lists</h3>
+        <p>Make sure you’re not resetting all list elements, because that might come in handy for styling other layout
+            elements, but remain their purpose for formatted text.</p>
+        <h4 class="wp-block-heading">What you need to consider?</h4>
+        <ul>
+            <li>What’s the margin and padding of the list?</li>
+            <li>Which list style is the default?</li>
+            <li>Will there be custom list style icons like:
+                <ol>
+                    <li>stars</li>
+                    <li>checkmarks</li>
+                    <li>colored bullets or list numbers</li>
+                </ol>
+            </li>
+            <li>Nested list styles should have a different look.
+                <ul>
+                    <li>The user agent stylesheet does that already.</li>
+                    <li>So custom styled lists should consider it as well.</li>
+                    <li>An option might be to only specifically style the top level list style icon to keep the browser
+                        defaults for nesting.</li>
+                </ul>
+            </li>
+            <li>Also remember to test multiline list items like the one above.</li>
+        </ul>
+        <hr class="wp-block-separator has-alpha-channel-opacity">
+        <h2 class="wp-block-heading" id="buttons-and-links">3. Buttons and Links&nbsp;<a
+                href="https://flyntwp.com/BaseStyle/#buttons-and-links">#</a></h2>
+        <p>A&nbsp;<strong>&lt;button&gt;</strong>&nbsp;element without a class should have its styles reset, so it can
+            be used as a semantic tag on other interface elements, like the arrows of a slider, a closing × or a burger
+            menu.</p>
+        <p>Using the anchor element (<strong>&lt;a&gt;</strong>) as a button is common for a “call to action”. Anchor
+            elements as&nbsp;<a href="https://www.google.com/search?q=HTML+Links" target="_blank"
+                rel="noreferrer noopener">regular Link</a>&nbsp;are nearly on all over the internet.</p>
+        <p>Displaying buttons side by side is a common pattern. The&nbsp;<code>.groupContainer</code>&nbsp;class is a
+            helper to achieve that.</p>
+        <p>Default BUTTONS</p>
+        <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+            <div class="wp-block-button is-style-fill"><a class="wp-block-button__link wp-element-button">Button</a>
+            </div>
+            <div class="wp-block-button is-style-alternative"><a
+                    class="wp-block-button__link wp-element-button">Alternative</a></div>
+            <div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button">Button
+                    outlined</a></div>
+        </div>
+        <p>CTA BUTTONS</p>
+        <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+            <div class="wp-block-button is-style-medium-outline is-style-cta-light"><a
+                    class="wp-block-button__link wp-element-button">Light</a></div>
+            <div class="wp-block-button is-style-cta-light-outline"><a
+                    class="wp-block-button__link wp-element-button">Light</a></div>
+            <div class="wp-block-button is-style-cta-medium"><a
+                    class="wp-block-button__link wp-element-button">Medium</a></div>
+            <div class="wp-block-button is-style-small-outline is-style-cta-medium-outline"><a
+                    class="wp-block-button__link wp-element-button">Medium</a></div>
+            <div class="wp-block-button is-style-small-outline is-style-cta-dark"><a
+                    class="wp-block-button__link wp-element-button">Dark</a></div>
+            <div class="wp-block-button is-style-small-outline is-style-cta-dark-outline"><a
+                    class="wp-block-button__link wp-element-button">Dark </a></div>
+        </div>
+        <p>Button TextButton Text disabled&nbsp;</p>
+        <p><a href="https://www.google.com/search?q=HTML+Links" target="_blank" rel="noreferrer noopener">Link as
+                Button</a></p>
+        <p><a href="https://www.google.com/search?q=HTML+Links" target="_blank" rel="noreferrer noopener">Link as Button
+                Text</a></p>
+        <p><a href="https://www.google.com/search?q=HTML+Links" target="_blank" rel="noreferrer noopener">Regular
+                Link</a></p>
+        <hr class="wp-block-separator has-alpha-channel-opacity">
+        <h2 class="wp-block-heading" id="forms">4. Forms&nbsp;<a href="https://flyntwp.com/BaseStyle/#forms">#</a></h2>
+        <p>Placing form elements on a page should just work without having to apply extra classes or custom wrapping
+            elements. However, a&nbsp;<strong>&lt;fieldset&gt;</strong>&nbsp;element provides a nice opportunity to
+            group multiple form elements.Text Input</p>
+        <style id="wpforms-css-vars-root">
+            :root {
+                --wpforms-field-border-radius: 3px;
+                --wpforms-field-background-color: #ffffff;
+                --wpforms-field-border-color: rgba(0, 0, 0, 0.25);
+                --wpforms-field-text-color: rgba(0, 0, 0, 0.7);
+                --wpforms-label-color: rgba(0, 0, 0, 0.85);
+                --wpforms-label-sublabel-color: rgba(0, 0, 0, 0.55);
+                --wpforms-label-error-color: #d63637;
+                --wpforms-button-border-radius: 3px;
+                --wpforms-button-background-color: #066aab;
+                --wpforms-button-text-color: #ffffff;
+                --wpforms-field-size-input-height: 43px;
+                --wpforms-field-size-input-spacing: 15px;
+                --wpforms-field-size-font-size: 16px;
+                --wpforms-field-size-line-height: 19px;
+                --wpforms-field-size-padding-h: 14px;
+                --wpforms-field-size-checkbox-size: 16px;
+                --wpforms-field-size-sublabel-spacing: 5px;
+                --wpforms-field-size-icon-size: 1;
+                --wpforms-label-size-font-size: 16px;
+                --wpforms-label-size-line-height: 19px;
+                --wpforms-label-size-sublabel-font-size: 14px;
+                --wpforms-label-size-sublabel-line-height: 17px;
+                --wpforms-button-size-font-size: 17px;
+                --wpforms-button-size-height: 41px;
+                --wpforms-button-size-padding-h: 15px;
+                --wpforms-button-size-margin-top: 10px;
+
+            }
+        </style>
+        <div class="wpforms-container wpforms-container-full wpforms-block wpforms-block-e8218458-8966-413e-9245-391b3f6edff2 wpforms-render-modern"
+            id="wpforms-17">
+            <form id="wpforms-form-17" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="17"
+                method="post" enctype="multipart/form-data" action="/sample-page/"
+                data-token="c050f8f813a68e4f10bd382bfdf16899" novalidate="novalidate"><noscript
+                    class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this
+                    form.</noscript>
+                <div class="wpforms-hidden" id="wpforms-error-noscript">Please enable JavaScript in your browser to
+                    complete this form.</div>
+                <div class="wpforms-field-container">
+                    <div id="wpforms-17-field_0-container" class="wpforms-field wpforms-field-name" data-field-id="0">
+                        <fieldset>
+                            <legend class="wpforms-field-label">Name <span class="wpforms-required-label"
+                                    aria-hidden="true">*</span></legend>
+                            <div class="wpforms-field-row wpforms-field-medium">
+                                <div class="wpforms-field-row-block wpforms-first wpforms-one-half"><input type="text"
+                                        id="wpforms-17-field_0" class="wpforms-field-name-first wpforms-field-required"
+                                        name="wpforms[fields][0][first]" aria-errormessage="wpforms-17-field_0-error"
+                                        required=""><label for="wpforms-17-field_0"
+                                        class="wpforms-field-sublabel after ">First</label></div>
+                                <div class="wpforms-field-row-block wpforms-one-half"><input type="text"
+                                        id="wpforms-17-field_0-last"
+                                        class="wpforms-field-name-last wpforms-field-required"
+                                        name="wpforms[fields][0][last]"
+                                        aria-errormessage="wpforms-17-field_0-last-error" required=""><label
+                                        for="wpforms-17-field_0-last" class="wpforms-field-sublabel after ">Last</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div id="wpforms-17-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1">
+                        <label class="wpforms-field-label" for="wpforms-17-field_1">Email <span
+                                class="wpforms-required-label" aria-hidden="true">*</span></label><input type="email"
+                            id="wpforms-17-field_1" class="wpforms-field-medium wpforms-field-required"
+                            name="wpforms[fields][1]" spellcheck="false" aria-errormessage="wpforms-17-field_1-error"
+                            required="">
+                    </div>
+                    <div id="wpforms-17-field_2-container" class="wpforms-field wpforms-field-textarea"
+                        data-field-id="2"><label class="wpforms-field-label" for="wpforms-17-field_2">Comment or
+                            Message</label><textarea id="wpforms-17-field_2" class="wpforms-field-medium"
+                            name="wpforms[fields][2]" aria-errormessage="wpforms-17-field_2-error"></textarea></div>
+                </div><!-- .wpforms-field-container -->
+                <div class="wpforms-submit-container"><input type="hidden" name="wpforms[id]" value="17"> <input
+                        type="hidden" name="wpforms[nonce]" value="e94c80de10">
+                    <input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]"
+                        value="2"><button type="submit" name="wpforms[submit]" id="wpforms-submit-17"
+                        class="wpforms-submit" data-alt-text="Sending..." data-submit-text="Submit"
+                        aria-live="assertive" value="wpforms-submit">Submit</button><img decoding="async"
+                        src="https://abc-staging.local/wp-content/plugins/wpforms-lite/assets/images/submit-spin.svg"
+                        class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="Loading">
+                </div>
+            </form>
+        </div> <!-- .wpforms-container -->
+        <hr class="wp-block-separator has-alpha-channel-opacity">
+        <h2 class="wp-block-heading" id="helpers">5. Helpers&nbsp;<a href="https://flyntwp.com/BaseStyle/#helpers">#</a>
+        </h2>
+        <p>To ensure a consistent appearance across all components, it is important to use helper classes for specific
+            tasks.</p>
+        <p>Keep in mind:&nbsp;<strong>A&nbsp;helper class should do one job and does it well.</strong></p>
+        <ul>
+            <li><code>.componentSpacing</code><br>Ensures consistent component top and bottom spacing.</li>
+            <li><code>.container</code><br>Ensures consistent left and right padding and website max width.</li>
+            <li><code>.groupContainer</code><br>Ensures consistent spacing between elements inside the container.</li>
+            <li><code>.scrollableTableWrapper</code><br>Wrapping a table with a container element with this class makes
+                the table scrollable on smaller screen sizes.</li>
+            <li><code>.visuallyHidden</code><br>Visually hides text in a way that screen readers will still read it.
+            </li>
+        </ul>
+        <h3 class="wp-block-heading">Box Helpers</h3>
+        <p>Box helper classes can be used alone or in combination to ensure consistent styling across components and
+            easily create “cards”.</p>
+        <ul>
+            <li>Using the class&nbsp;<code>.boxBorder</code>&nbsp;allows you to consistently add borders.</li>
+            <li>Using the class&nbsp;<code>.boxPadding</code>&nbsp;allows you to consistently style any content
+                container as a responsive padding box.</li>
+        </ul>
+    </div>
+
+<div class="wp-block-media-text alignwide">
+    <figure class="wp-block-media-text__media"><img decoding="async"
+           src="../assets/images/default-image-two.png" alt="Boardwalk"  height="400px"
+            class="wp-image-757 size-full"></figure>
+    <div class="wp-block-media-text__content">
+        <p class="has-large-font-size">Media &amp;Text</p>
+
+
+
+        <p>For displaying media and text next to each other. By default, the media is to the left.</p>
+    </div>
+</div>
+
+<div class="wp-block-media-text alignfull has-media-on-the-right is-stacked-on-mobile has-background"
+    style="background-color:#ebf5fe">
+    <div class="wp-block-media-text__content">
+        <p class="has-large-font-size">This time our block is full width, and the image is to the right.</p>
+
+
+
+        <p>The background color is a pale blue.&nbsp;</p>
+    </div>
+    <figure class="wp-block-media-text__media"><img decoding="async" src="../assets/images/default-image-one.png" height="400px" alt="Golden Gate Bridge" /></figure>
+           </figure>
+</div>

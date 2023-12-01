@@ -1,6 +1,6 @@
 
-// https://github.com/tailwindlabs/tailwindcss/discussions/6256
-// ...(process.env.NODE_ENV == 'development') && { safelist: [ { pattern: /.*/ },
+const theme = require('./theme.json');
+const falconTailwind = require("@webfalconwordpress/tailwindcss-falcon-tailwind-plugin");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -99,6 +99,7 @@ module.exports = {
         }
     },
     plugins: [
+        falconTailwind.tailwind,
         require('flowbite/plugin'),
 
         // This custom plugin adds a container class. Content width inside the containers are following bootstrap's breakpoints. Designer should use these breakpoints when designing the site.

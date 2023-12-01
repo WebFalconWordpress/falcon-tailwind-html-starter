@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<body>
-
+<head>
 	
 
 <!-- Include all css from css folder -->
@@ -12,8 +11,12 @@
 <link rel="stylesheet" href="../assets/css/app.css">
 
 <script src="../assets/js/app.js"></script>
+</head>
 
-<div class="bg-gray-50">
+<body>
+
+	<div class="wp-site-blocks">
+		<header class="bg-gray-400">
 	<div class="container py-4 mx-auto lg:flex lg:justify-between lg:items-center">
 
 		<div class="flex items-center justify-between">
@@ -29,12 +32,12 @@
 			</a>
 		</div>
 	</div>
-</div>
+</header>
 
-	<main class="wp-block-group page-block-content">
+		<main class="wp-block-group page-block-content">
 
-		<article class="container mx-auto my-8 wp-block-group">
-			<section class="bg-white dark:bg-gray-900">
+			<article class="container mx-auto my-8 wp-block-group">
+				<section class="bg-white dark:bg-gray-900">
     <div class="max-w-screen-xl px-4 py-8 mx-auto sm:py-16 lg:px-6">
         <div class="max-w-screen-md">
             <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">Let's find more that brings us together.</h2>
@@ -83,7 +86,7 @@
       </div>
   </div>
 </section>
-			<section class="antialiased bg-white dark:bg-gray-900">
+				<section class="antialiased bg-white dark:bg-gray-900">
   <div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
     <div class="max-w-2xl mx-auto text-center">
       <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl dark:text-white">
@@ -361,27 +364,21 @@
     </div>
   </div>
 </section>
-		</article>
+			</article>
 
-	</main>
+		</main>
 
-	
-<!-- wp:group {"className":"sticky bottom-0 bg-gray-50"} -->
-<div class="sticky bottom-0 wp-block-group bg-gray-50">
-	<!-- wp:group {"className":"container flex justify-between mx-auto text-center text-gray-500 h-20 place-items-center"} -->
+		<footer class="bg-gray-400  wp-block-group">
 	<div
 		class="container flex justify-between h-20 mx-auto text-center text-gray-500 wp-block-group place-items-center">
-		<!-- wp:site-logo /-->
-
+		SITE LOGO
 		<!-- wp:paragraph {"className":"has-text-align-center has-secondary-color has-text-color has-link-color has-small-font-size"} -->
 		<p class="has-text-align-center has-secondary-color has-text-color has-link-color has-small-font-size">
-		&copy; 2023 by ABC Ventures. Proudly created with <a href="https://wordpress.org/">WordPress</a>
+		&copy; 2023 by Web Falcon. Proudly created with <a href="https://webfalcon.me/">Web Falcon</a>
 		<!-- /wp:paragraph -->
 	</div>
-	<!-- /wp:group -->
-</div> 
-<!-- /wp:group -->
-
+</footer> 
+	</div>
 </body>
 
 </html>

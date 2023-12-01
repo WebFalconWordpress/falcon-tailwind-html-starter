@@ -527,14 +527,6 @@ input[type="range"]::-ms-fill-lower {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -890,9 +882,9 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.bg-gray-50 {
+.bg-gray-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .bg-green-100 {
@@ -923,6 +915,11 @@ input[type="range"]::-ms-fill-lower {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-black-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 42 55 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -1085,6 +1082,10 @@ input[type="range"]::-ms-fill-lower {
   text-transform: uppercase;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .leading-6 {
   line-height: 1.5rem;
 }
@@ -1177,6 +1178,72 @@ input[type="range"]::-ms-fill-lower {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.alignfull {
+  margin: 0rem calc(50% - 50vw) !important;
+  max-width: 100vw !important;
+  width: 100vw;
+}
+
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > .alignfull {
+  margin: 0px !important;
+  width: 100%;
+  max-width: 100% !important;
+}
+
+.alignwide {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px !important;
+}
+
+.alignnone {
+  margin-left: 0px;
+  margin-right: 0px;
+  height: auto;
+  max-width: 100%;
+}
+
+.aligncenter {
+  margin: 0.5rem auto;
+  display: block;
+}
+
+@media (min-width: 640px) {
+  .alignleft:not(.wp-block-button) {
+    margin-right: 0.5rem;
+    float: left;
+  }
+
+  .alignright:not(.wp-block-button) {
+    margin-left: 0.5rem;
+    float: right;
+  }
+
+  .wp-block-button.alignleft a {
+    float: left;
+    margin-right: 1rem;
+  }
+
+  .wp-block-button.alignright a {
+    float: right;
+    margin-left: 1rem;
+  }
+}
+
+.wp-caption {
+  display: inline-block;
+}
+
+.wp-caption img {
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.wp-caption-text {
+  font-size: 0.875rem;
+  color: #4B5563;
+}
+
 /* 
     This is fix when using alignfull class since this is causing horisontal scrolling
 */
@@ -1197,6 +1264,14 @@ html, body {
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
+}
+
+/* Remove block gap for one or more elements */
+
+.no-block-gap-for-children > *,
+.no-block-gap {
+  margin-block-start: 0!important;
+  margin-block-end: 0!important;
 }
 
 /* These buttons are Style Variations definded ind editor-styles.js */
