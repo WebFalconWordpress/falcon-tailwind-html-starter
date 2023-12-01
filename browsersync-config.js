@@ -15,7 +15,7 @@ module.exports = {
     "reloadOnRestart": true,
     "port": 3000,
     "browser": "chrome",
-    "reloadDelay": 100,
+    "reloadDelay": 300,
     "watchEvents": [ 
         "change" 
     ]

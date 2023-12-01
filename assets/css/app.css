@@ -519,10 +519,6 @@ input[type="range"]::-ms-fill-lower {
   visibility: collapse;
 }
 
-.static {
-  position: static;
-}
-
 .relative {
   position: relative;
 }
@@ -917,11 +913,6 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-black-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 42 55 / var(--tw-bg-opacity));
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1172,10 +1163,6 @@ input[type="range"]::-ms-fill-lower {
 
 .outline {
   outline-style: solid;
-}
-
-.filter {
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .alignfull {

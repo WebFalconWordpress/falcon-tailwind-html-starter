@@ -8,8 +8,10 @@ module.exports = {
         preflight: false,
     },
     content: [
-        './*.html',
-        './**/*.html',
+        './includes/*.html',
+        './includes/**/*.html',
+        './templates/*.html',
+        './templates/**/*.html',
         './resources/css/*.css',
         './resources/js/*.js',
         './safelist.txt'
