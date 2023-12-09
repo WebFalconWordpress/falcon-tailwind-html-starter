@@ -27,14 +27,17 @@ module.exports = {
                 3: '#0FA8DA',       // Contrast / Three
                 4: '#111928'        // Contrast / Four
             },
-            white: '#FFFFFF',          // White
             accent: {
                 DEFAULT: '#111928',       // Accent
                 2: '#003D79',       // Accent / Two
                 3: '#d8613c',       // Accent / Three
                 4: '#0E9F6E',       // Accent / Four
                 5: '#12B5EA'        // Accent / Five
-            }
+            },
+            white: '#FFFFFF',          // White
+            black: '#000000',          // Black
+            whatEver: '#F9FAFB',       // What Ever
+            whatEver2: '#ECF4FC',      // What Ever / Two
         },
 
         // Those are the breakpoints for all screens. They are following Tailwind's default breakpoints except for xs screen which is added here.
