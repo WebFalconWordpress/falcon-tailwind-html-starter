@@ -1,4 +1,3 @@
-
 const theme = require('./theme.json');
 const falconTailwind = require("@webfalconwordpress/tailwindcss-falcon-tailwind-plugin");
 
@@ -8,87 +7,35 @@ module.exports = {
         preflight: false,
     },
     content: [
-        './includes/*.html',
-        './includes/**/*.html',
-        './templates/*.html',
-        './templates/**/*.html',
+        './*.php',
+        './**/*.php',
+        './*.html',
+        './**/*.html',
         './resources/css/*.css',
         './resources/js/*.js',
         './safelist.txt'
     ],
     theme: {
         extend: {
-           colors: {
-            base : "var(--wp--preset--color--base)",
-            contrast : "var(--wp--preset--color--contrast)",
-            contrast2 : "var(--wp--preset--color--contrast-2)", 
-            contrast3 : "var(--wp--preset--color--contrast-3)",
-            black: {
-              50: '#FFFFFF',
-              100: '#FAFAFF',
-              200: '#F3F4F6',
-              300: '#E5E7EB',
-              400: '#979CA5',
-              500: '#6B7280',
-              600: '#2F3B52',
-              700: '#1F2A37',
-              800: '#111928',
-              900: '#100D06',
+          colors: {
+            'base-1': '#F9FAFB',       // Base One
+            'base-2': '#ECF4FC',       // Base Two
+            'base-3': '#DEF7EC',       // Base Three
+            contrast: {
+                DEFAULT: '#6B7280',       // Contrast
+                2: '#1A56DB',       // Contrast / Two
+                3: '#0FA8DA',       // Contrast / Three
+                4: '#111928'        // Contrast / Four
             },
-            PrplBlue: {
-              50: '#F0EFFF',
-              100: '#E5E3FF',
-              200: '#D9D6FF',
-              300: '#C7C3FF',
-              400: '#B5AEFF',
-              500: '#9D95FA',
-              600: '#776BFF',
-              700: '#5E52E8',
-              800: '#4F44D1',
-              900: '#443AB9',
-            },
-            blue: {
-              50: '#EBF5FF',
-              100: '#E1EFFE',
-              200: '#C3DDFD',
-              500: '#3F83F8',
-              600: '#1064F2',
-              700: '#1A56DB',
-              800: '#1E429F',
-              900: '#233876',
-            },
-            purple: {
-              50: '#F9EDFF',
-              100: '#F3DCFF',
-              200: '#EFD2FF',
-              400: '#E2B5F9',
-              500: '#D8A5F2',
-              700: '#CC69FF',
-              800: '#BC41FB',
-            },
-          cyan: {
-            50: '#E7FAFF',
-            900: '#20809B',
-          },
-
-          // NOTE!!!! This is color used for DEMO only so our examples of this starter can work. Please don't use this color in your project.NOTE!!!! 
-          primary: {
-            "50": "#eff6ff",
-            "100": "#dbeafe",
-            "200": "#bfdbfe", 
-            "300": "#93c5fd", 
-            "400": "#60a5fa", 
-            "500": "#3b82f6", 
-            "600": "#2563eb", 
-            "700": "#1d4ed8", 
-            "800": "#1e40af", 
-            "900": "#1e3a8a", 
-            "950": "#172554"
-          }
+            white: '#FFFFFF',          // White
+            accent: {
+                DEFAULT: '#111928',       // Accent
+                2: '#003D79',       // Accent / Two
+                3: '#d8613c',       // Accent / Three
+                4: '#0E9F6E',       // Accent / Four
+                5: '#12B5EA'        // Accent / Five
+            }
         },
-        },
-
-
 
         // Those are the breakpoints for all screens. They are following Tailwind's default breakpoints except for xs screen which is added here.
         screens: {
@@ -99,6 +46,7 @@ module.exports = {
             'xl': '1280px',
             '2xl': '1536px'
         }
+      },
     },
     plugins: [
         falconTailwind.tailwind,
@@ -129,12 +77,12 @@ module.exports = {
                 '@screen xl': { 
                     paddingLeft: '40px',
                     paddingRight: '40px',
-                    maxWidth:  '1200px',
+                    maxWidth:  '1280px',
                 },
                 '@screen 2xl': { 
-                    paddingLeft: '68px',
-                    paddingRight: '68px',
-                    maxWidth:  '1400px', // You can redefine max width for 2xl screen here depending on your design needs. Some designers prefer to keep the same max width for all screens.
+                    paddingLeft: '80px',
+                    paddingRight: '80px',
+                    maxWidth:  '1440px', // You can redefine max width for 2xl screen here depending on your design needs. Some designers prefer to keep the same max width for all screens.
                 }
               }
             })
